@@ -34,6 +34,7 @@
         # Turn on/off gate
         DPEAButton:
             id: gate
+            mDir: 0
             color: 0.180, 0.188, 0.980, 1
             text: "Open Gate"
             center_x: root.width * 0.25
@@ -55,6 +56,7 @@
             background_normal: ''
             size_hint: None,None
             size: 300,100
+            value: 2
             on_press: root.toggleRamp()
             on_release: root.resetColors()
 
@@ -68,6 +70,8 @@
             background_normal: ''
             size_hint: None,None
             size: 300,100
+            lDir: 0
+            value: 0
             on_press: root.toggleStaircase()
             on_release: root.resetColors()
 
